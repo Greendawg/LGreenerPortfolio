@@ -1,0 +1,27 @@
+.jumbotron{
+
+}
+
+.enbolden:hover{
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.img-responsive{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+:required{
+    background: #0cffff;
+}
+:valid{
+    background: white;
+}
+
+.active{
+    color: red;
+    font-weight: bolder;
+}
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lance Greener</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="border: 1px solid; background-color: aqua">
+    <div class="row"></div>
+    <div class="col-sm-4"><img src="src/img/LanceGreener_Headshot-Joseph.jpg"  class="img-responsive" align="left" alt="A picture of myself, Lance Greener, in a blue, collared shirt with white stripes."></div>
+    <div class="col-sm-8">
+        <div>
+            <h1 align="center">Lance Greener</h1>
+            <h3 align="center">351 E 1780 S Orem, UT 84058</h3>
+        </div>
+    </div>
+</div>
+<br/>
+<div class="container-fluid">
+    <div class="row" align="center" style="background-color: greenyellow; border: 1px solid">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2"><a href="Home.html">Home</a></div>
+        <div class="col-sm-2"><a href="Bio.html">Personal Info</a></div>
+        <div class="col-sm-2"><a href="Resume.html">Resume</a></div>
+        <div class="col-sm-2"><a href="ContactForm.html" class="active">Contact Me</a></div>
+        <div class="col-sm-2"><a href="SiteMap.html">Site Map</a></div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+<br/><br/>
+<form method="post">
+    <h2>Hey, I'm glad you found me! I'd love to get back to you. Please leave me
+        your contact information.</h2>
+    <br/>
+    <br/>
+    <label for="firstName">First &amp; Last Name:</label><input id="firstName" name="firstName" required pattern="[a-zA-Z]">
+    <label for="lastName"></label><input id="lastName" name="lastName" required pattern="[a-zA-Z]"><br/><br/>
+    <label for="email">Email Address:</label><input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br/><br/>
+    <label>Where did we meet?</label>
+    <select name="howDoIKnowYou">
+        <option label="" value="0"></option>
+        <option label="Highschool" value="1"></option>
+        <option label="College" value="2"></option>
+        <option label="Work" value="3"></option>
+        <option label="Church" value="4"></option>
+        <option label="Other" value="5"></option>
+    </select><br/><br/>
+    <label>Where do you currently live?</label>
+    <label for="city">City </label><input id="city" name="city">
+    <strong>State</strong> <select name="state">
+    <option label="" value="0"></option>
+    <option label="AK" value="1"></option>
+    <option label="AL" value="2"></option>
+    <option label="AR" value="3"></option>
+    <option label="AZ" value="4"></option>
+    <option label="CA" value="5"></option>
+    <option label="CO" value="6"></option>
+    <option label="CT" value="7"></option>
+    <option label="DE" value="8"></option>
+    <option label="FL" value="9"></option>
+    <option label="GA" value="10"></option>
+    <option label="HI" value="11"></option>
+    <option label="IA" value="12"></option>
+    <option label="ID" value="13"></option>
+    <option label="IL" value="14"></option>
+    <option label="IN" value="15"></option>
+    <option label="KS" value="16"></option>
+    <option label="KY" value="17"></option>
+    <option label="LA" value="18"></option>
+    <option label="MA" value="19"></option>
+    <option label="MD" value="20"></option>
+    <option label="ME" value="21"></option>
+    <option label="MI" value="22"></option>
+    <option label="MN" value="23"></option>
+    <option label="MO" value="24"></option>
+    <option label="MS" value="25"></option>
+    <option label="MT" value="26"></option>
+    <option label="NC" value="27"></option>
+    <option label="ND" value="28"></option>
+    <option label="NE" value="29"></option>
+    <option label="NH" value="30"></option>
+    <option label="NJ" value="31"></option>
+    <option label="NM" value="32"></option>
+    <option label="NV" value="33"></option>
+    <option label="NY" value="34"></option>
+    <option label="OH" value="35"></option>
+    <option label="OK" value="36"></option>
+    <option label="OR" value="37"></option>
+    <option label="PA" value="38"></option>
+    <option label="RI" value="39"></option>
+    <option label="SC" value="40"></option>
+    <option label="SD" value="41"></option>
+    <option label="TN" value="42"></option>
+    <option label="TX" value="43"></option>
+    <option label="UT" value="44"></option>
+    <option label="VA" value="45"></option>
+    <option label="VT" value="46"></option>
+    <option label="WA" value="47"></option>
+    <option label="WI" value="48"></option>
+    <option label="WV" value="49"></option>
+    <option label="WY" value="50"></option>
+</select><br/><br/>
+    <label>What have you been up to since the last time we saw each other?</label>
+    <br/>
+    <br/>
+    <textarea cols="90" rows="10"></textarea>
+    <br/>
+    <br/>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <br/>
+    <br/>
+    <label>If you don't know me but have any suggestions, tips, or tricks to improve my site, let me know.</label>
+    <br/>
+    <br/>
+    <textarea cols="90" rows="10"></textarea>
+    <br/>
+    <br/>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <br/>
+    <br/>
+    <br/>
+</form>
+
+</body>
+</html>
